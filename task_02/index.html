@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real State</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="left-section">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars" id="menuIcon"></i>
+                </div>
+                <div class="logo">
+                    <img src="./Real-state Logo 1.png" alt="logo">
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a id="nav1" href="#home" class="nav-item">Home</a></li>
+                <li><a id="nav2" href="#serve" class="nav-item">Services</a></li>
+                <li><a id="nav3" href="#abt" class="nav-item">About Us</a></li>
+                <li><a id="nav4" href="#projects" class="nav-item">Projects</a></li>
+                <li><a id="nav5" href="#cntct" class="nav-item">Contact Us</a></li>
+            </ul>
+            <div class="auth_buttons">
+                <button class="signup">Sign Up</button>
+                <button class="login">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+  
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+   
+        const navItems = document.querySelectorAll('.nav-item');
+        
+      
+        navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                
+                const hamburger = document.querySelector('.hamburger');
+                const computedStyle = window.getComputedStyle(hamburger);
+                
+                if (computedStyle.display !== 'none') {
+           
+                    const navLinks = document.getElementById('navLinks');
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
