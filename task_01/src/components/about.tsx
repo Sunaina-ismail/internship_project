@@ -1,15 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Code,
-  GitBranch,
-  Figma,
-  Database,
-  Braces,
-  PenTool,
-  Github,
-} from "lucide-react";
+import { Code,  Database, Braces, PenTool, Paintbrush2, DatabaseBackup }from "lucide-react";
 import Image from "next/image";
 
 const skills = [
@@ -17,8 +9,8 @@ const skills = [
   { name: "TypeScript", icon: <Code className="h-6 w-6" />, level: 95 },
   { name: "React", icon: <Braces className="h-6 w-6" />, level: 88 },
   { name: "Next.js", icon: <Braces className="h-6 w-6" />, level: 90 },
-  { name: "Github", icon: <Github className="h-6 w-6" />, level: 80 },
-  { name: "Figma", icon: <Figma className="h-6 w-6" />, level: 50 },
+  { name: "Github", icon: <DatabaseBackup className="h-6 w-6" />, level: 80 },
+  { name: "Figma", icon: <Paintbrush2 className="h-6 w-6" />, level: 50 },
   { name: "Sanity", icon: <Database className="h-6 w-6" />, level: 60 },
   { name: "Python", icon: <Code className="h-6 w-6" />, level: 60 },
 ];
@@ -64,7 +56,7 @@ export default function About() {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-300 mb-6"
             >
-              I'm a passionate full stack developer skilled in building modern,
+              I&apos;m a passionate full stack developer skilled in building modern,
               scalable, and responsive web applications. With a solid grasp of
               both front-end and back-end technologies, I bring ideas to life
               with clean code, functional design, and performance in mind.

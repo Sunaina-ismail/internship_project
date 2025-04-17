@@ -26,7 +26,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            Hello, I'm Sunaina Ismail
+            Hello, I&apos;m Sunaina Ismail
           </motion.h1>
 
           <motion.h2

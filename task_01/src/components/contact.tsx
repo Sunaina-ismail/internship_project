@@ -27,7 +27,7 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
+   
     await new Promise((resolve) => setTimeout(resolve, 1500))
 
     setFormData({ name: "", email: "", message: "" })
